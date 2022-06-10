@@ -1,0 +1,732 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="tick_analysis" id=":-j/[JJHOb{uC2-@5h`@" collapsed="true">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="controls_if" id="d=WVbMQx_CrMIwcz`=O?" collapsed="true">
+        <value name="IF0">
+          <block type="variables_get" id="T~Zk?TdsbG$Gc`M|~:so">
+            <field name="VAR" id="#;9$qUC]NegTtn{E:JG%" variabletype="">Virtual Test mode</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="fTwhxgpm[9aRAT+|DM*^">
+            <value name="IF0">
+              <block type="variables_get" id="]W{g{vRo2/s[+J^Nf#l/">
+                <field name="VAR" id="O-;46/#m`KH%}6!`RJs:" variabletype="">test signal_up</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="]7=6fIR7v(SYhs=fOFv6">
+                <field name="VAR" id="!~}h=~VQQp(v,NG,O0EK" variabletype="">wait_machine</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="dMPKyz8PXA``#$8eO[H#">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="math_change" id="P=XnNKlKOob*y#-V6FLo">
+                    <field name="VAR" id="Q,:PKR%OD?bkQ{E4f(Q^" variabletype="">check_c</field>
+                    <value name="DELTA">
+                      <shadow type="math_number" id="_jJ]n/|]}%DGK~l4o~2|">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="notify" id="y%Q{hpIu9eGVe1==vg8w">
+                        <field name="NOTIFICATION_TYPE">info</field>
+                        <field name="NOTIFICATION_SOUND">silent</field>
+                        <value name="MESSAGE">
+                          <shadow type="text" id="V/s6%Ji[umBz(pXso1l,">
+                            <field name="TEXT">Algorithm test_mode Running...</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="notify" id="Yy[E6;j=1@^w!U/ugrm}">
+                            <field name="NOTIFICATION_TYPE">info</field>
+                            <field name="NOTIFICATION_SOUND">silent</field>
+                            <value name="MESSAGE">
+                              <shadow type="text" id="Ye3[Th:1;E4BTQZ9NzJi">
+                                <field name="TEXT">Algorithm test_mode :: entry CALL </field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="timeout" id="(U5yT}Gp$Jb-dhhj?,rx">
+                                <statement name="TIMEOUTSTACK">
+                                  <block type="controls_if" id="K~=#4XU93}oL)F}VN+sG">
+                                    <mutation else="1"></mutation>
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="@9W0]7mNWP=aV[?4`]1_" inline="false">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="tick" id="`rK8U.LPg@pGm*Ry7!MN"></block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="lists_getIndex" id="vrL]{/9^K`|z*|:HGa_r">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_END</field>
+                                            <value name="VALUE">
+                                              <block type="ticks" id="6VFr~m`7|yLZEQR/XF#."></block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="math_arithmetic" id="jw+tVzNLVRxAovt%ffr$">
+                                                <field name="OP">ADD</field>
+                                                <value name="A">
+                                                  <shadow type="math_number" id="k[d^EcE?b8kQTTNh_3s]">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="lki67(,*Ax97+MO{R4if">
+                                                    <field name="VAR" id="HVx/c+QIN$CWoZNd*9rp" variabletype="">Time Expiry ⌚</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number" id="zkmbQiIm(jHi^cz!yMLb">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="math_change" id="dL2-ei#~8bv!/HZCAL](">
+                                        <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                        <value name="DELTA">
+                                          <shadow type="math_number" id=")bX$Ui0HHh*3qYVD}[[!">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="notify" id="#k2.arzC@RTN@HkAA#E,">
+                                            <field name="NOTIFICATION_TYPE">success</field>
+                                            <field name="NOTIFICATION_SOUND">silent</field>
+                                            <value name="MESSAGE">
+                                              <shadow type="text" id="~lMdQr|JV.$2Lca,F(fs">
+                                                <field name="TEXT">VIRTUAL_TEST_MODE :: CALL WINNING </field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="notify" id="e9WdG|O2E^3^I5Q:^#L?">
+                                                <field name="NOTIFICATION_TYPE">success</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="?9+6KgJv$diB)+~5XvZ|">
+                                                    <field name="TEXT">VIRTUAL_TEST_MODE :: CALL WINNING</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="xf:#E4@[H|-1n2H2`I0e">
+                                                    <field name="VAR" id="O-;46/#m`KH%}6!`RJs:" variabletype="">test signal_up</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="L+|W[nf:wR*mx|MDB.Cv">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="notify" id="Dqq|-R{XYaB@XIpxIz_8">
+                                                        <field name="NOTIFICATION_TYPE">info</field>
+                                                        <field name="NOTIFICATION_SOUND">silent</field>
+                                                        <value name="MESSAGE">
+                                                          <shadow type="text" id="JfStjJ~TGtC/aoG|lA9:">
+                                                            <field name="TEXT">shutdown signal entry call</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block type="math_change" id="3IOSdrWS~$*0on%Z$@[C">
+                                        <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                        <value name="DELTA">
+                                          <shadow type="math_number" id="e!|^50W)}}A~F$[]NrF}">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_single" id=")njk]PwbAeV?sm0@//TJ">
+                                            <field name="OP">NEG</field>
+                                            <value name="NUM">
+                                              <shadow type="math_number" id="xjJN4TUZPlC3R3Ku6HQl">
+                                                <field name="NUM">9</field>
+                                              </shadow>
+                                              <block type="math_number" id="qx[X~]0omWKWkVw@4,JB">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="notify" id="xj:(`/RO@#_!Xq`jvHzU">
+                                            <field name="NOTIFICATION_TYPE">error</field>
+                                            <field name="NOTIFICATION_SOUND">silent</field>
+                                            <value name="MESSAGE">
+                                              <shadow type="text" id="0DQFM[VMAGeGujrjgp;X">
+                                                <field name="TEXT">VIRTUAL_TEST_MODE :: CALL LOST </field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="notify" id="Z:cPb`7j8~L$p8?3S$5f">
+                                                <field name="NOTIFICATION_TYPE">error</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="vZfmY/bl}_C*[=FI711h">
+                                                    <field name="TEXT">VIRTUAL_TEST_MODE :: CALL LOST</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="ji:NCg;}M+aV[t5IF7,F">
+                                                    <field name="VAR" id="O-;46/#m`KH%}6!`RJs:" variabletype="">test signal_up</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="VKsaRE)ls(,4[lD~9H[]">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <value name="SECONDS">
+                                  <shadow type="math_number" id="/Pm|ieAs0j-CgY1$FJFE">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="72oo94oSj9PMmfX9KGoE" inline="false" collapsed="true">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="VRnP6R#wCS}zfNhg(KyD">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="KhPrzaN%e{!+?O5j2]_C">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="!U9B{L_d8xX(r/jTd+et">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="wtexS![;g{zX0jF!DZvZ">
+                                            <field name="VAR" id="HVx/c+QIN$CWoZNd*9rp" variabletype="">Time Expiry ⌚</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="MRn_Q`9ALZgA*:%FXv)+">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_number" id="lpf4X59PiilcuU]FwSW2">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="VSH!+{hb0=5+{9y9B5k|">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id=",D7C?;7QvU/H@d-W+@kX">
+                <value name="IF0">
+                  <block type="variables_get" id="vON^TYta$iglb*52IPCJ">
+                    <field name="VAR" id="{mGpzCp7LtFw#L-x1H:X" variabletype="">test signal_Dn</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="variables_set" id="nBQ68**Pu}rIQAWVo[IF">
+                    <field name="VAR" id="!~}h=~VQQp(v,NG,O0EK" variabletype="">wait_machine</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="B|c~=InG{8vMwrwfk,bb">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="math_change" id="},SG^*~f`^O+AmEz{f.a">
+                        <field name="VAR" id="Q,:PKR%OD?bkQ{E4f(Q^" variabletype="">check_c</field>
+                        <value name="DELTA">
+                          <shadow type="math_number" id="Rh]sgbA]B|rvNZ84(OQl">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="notify" id="$(Q=ve[H|AnN}p0dJ;r_">
+                            <field name="NOTIFICATION_TYPE">info</field>
+                            <field name="NOTIFICATION_SOUND">silent</field>
+                            <value name="MESSAGE">
+                              <shadow type="text" id="pG]UzUCbG@9.n:Iga/Ri">
+                                <field name="TEXT">Algorithm test_mode Running...</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="notify" id="1z[wdS{*$6V4f1-]0QF~">
+                                <field name="NOTIFICATION_TYPE">info</field>
+                                <field name="NOTIFICATION_SOUND">silent</field>
+                                <value name="MESSAGE">
+                                  <shadow type="text" id="^]BRasZ_%]{isJ]El5-L">
+                                    <field name="TEXT">Algorithm test_mode :: entry PUT</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="timeout" id="oe-{/H.|{Jbb*)m)ZXb8">
+                                    <statement name="TIMEOUTSTACK">
+                                      <block type="controls_if" id="~;q8a=G[a+CyX9Y!D$at">
+                                        <mutation else="1"></mutation>
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="YiveB#(WoxuBk$a~d3Wf" inline="false">
+                                            <field name="OP">LT</field>
+                                            <value name="A">
+                                              <block type="tick" id="kqCwm@oCTs2ZjqEzdGsq"></block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="lists_getIndex" id="yi)8KZHK4cBp{qgZvv:|">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_END</field>
+                                                <value name="VALUE">
+                                                  <block type="ticks" id="N!qK?8JLpHPNgn%~d.F7"></block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_arithmetic" id="Q]!sr^*RB_i7ZPEdmOc:">
+                                                    <field name="OP">ADD</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number" id="k[d^EcE?b8kQTTNh_3s]">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="(t[/3@d=wTR;1V_Y;P^S">
+                                                        <field name="VAR" id="HVx/c+QIN$CWoZNd*9rp" variabletype="">Time Expiry ⌚</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number" id="a:!G{::T^Lz+GD/KNu%#">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="math_change" id="F+ei%S(%f^r+I|/?*EC6">
+                                            <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number" id="bI6Xl|]os71$FM`#FeaF">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="notify" id="iLj{|]cX?1wCX?U@(rKw">
+                                                <field name="NOTIFICATION_TYPE">success</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="_ON($ga(cQvwt}vNA-Q~">
+                                                    <field name="TEXT">VIRTUAL_TEST_MODE :: PUT WINNING </field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="notify" id="rYQr_a@^RU3RxV}1I+w3">
+                                                    <field name="NOTIFICATION_TYPE">success</field>
+                                                    <field name="NOTIFICATION_SOUND">silent</field>
+                                                    <value name="MESSAGE">
+                                                      <shadow type="text" id="+|f`+z%v!Ix}E-@(^-st">
+                                                        <field name="TEXT">VIRTUAL_TEST_MODE :: PUT WINNING </field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="73M.6$x$XrPm}_u4J2AT">
+                                                        <field name="VAR" id="{mGpzCp7LtFw#L-x1H:X" variabletype="">test signal_Dn</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="k9[Qd3^/ur-OLW}9i0F_">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="notify" id="p$rb4xSoRr,ar.!:GpbI">
+                                                            <field name="NOTIFICATION_TYPE">info</field>
+                                                            <field name="NOTIFICATION_SOUND">silent</field>
+                                                            <value name="MESSAGE">
+                                                              <shadow type="text" id="K5G[lCW=q;^a!4F/g[a9">
+                                                                <field name="TEXT">shutdown the signal entry PUT</field>
+                                                              </shadow>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <statement name="ELSE">
+                                          <block type="math_change" id="Km#,^wY`doiM350.8JiG">
+                                            <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                            <value name="DELTA">
+                                              <shadow type="math_number" id="g1cCAQ@X_EsPZ04Xp4qI">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_single" id="Dp6p^3ab^iu*qISek_f|">
+                                                <field name="OP">NEG</field>
+                                                <value name="NUM">
+                                                  <shadow type="math_number" id="xjJN4TUZPlC3R3Ku6HQl">
+                                                    <field name="NUM">9</field>
+                                                  </shadow>
+                                                  <block type="math_number" id="dV@+BR=1(7}4D?iLRy-~">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="notify" id="fa-i6Q@RP-q~`lb4gN(8">
+                                                <field name="NOTIFICATION_TYPE">error</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="gsv8c|^1IS-M;hc)vw2m">
+                                                    <field name="TEXT">VIRTUAL_TEST_MODE :: PUT LOST</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="notify" id="Ga.VeD+yg,V^2[=Y)[,y">
+                                                    <field name="NOTIFICATION_TYPE">error</field>
+                                                    <field name="NOTIFICATION_SOUND">silent</field>
+                                                    <value name="MESSAGE">
+                                                      <shadow type="text" id="ySX1~HwByT_4(/QJ;v%w">
+                                                        <field name="TEXT">VIRTUAL_TEST_MODE :: PUT LOST</field>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="+PaJhx2WGM3FyZ[5*76,">
+                                                        <field name="VAR" id="{mGpzCp7LtFw#L-x1H:X" variabletype="">test signal_Dn</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="P1c(M@adR7r+BFi4{Y+1">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                    <value name="SECONDS">
+                                      <shadow type="math_number" id="(V~S8gMffvNC=7E~[Bsb">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="{OU4)TZII((dIVuupQN[" inline="false" collapsed="true">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="VRnP6R#wCS}zfNhg(KyD">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="Mf9mTu[/#jqLV/pEt2Z6">
+                                            <field name="OP">MULTIPLY</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="!U9B{L_d8xX(r/jTd+et">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="ZTnPylPcPwz_|`~]G^ee">
+                                                <field name="VAR" id="HVx/c+QIN$CWoZNd*9rp" variabletype="">Time Expiry ⌚</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="MRn_Q`9ALZgA*:%FXv)+">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_number" id="jUE*GfXS|`2Clzh*mF5A">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="l^m]X15kL:p!*-D0wFsr">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="LI=3qj.6piLK9VDleVp$">
+                    <value name="IF0">
+                      <block type="logic_compare" id="{:RMndMSItoJU:0T$_E`">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="v{ez=?3ea(LQt,7flJf,">
+                            <field name="VAR" id="Q,:PKR%OD?bkQ{E4f(Q^" variabletype="">check_c</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id="1`h+3FitXqU;|oN.2%gR">
+                            <field name="VAR" id="}@!ddRa#WJ8/.jQ%-:xe" variabletype="">check test after</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="R#i5,~.qOzd%U2CPP}9,">
+                        <mutation else="1"></mutation>
+                        <value name="IF0">
+                          <block type="logic_compare" id=";}:05lTvjdwm8oi~/Q!`">
+                            <field name="OP">GTE</field>
+                            <value name="A">
+                              <block type="variables_get" id="/`wj|-6,6a3FO*iq:SSF">
+                                <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="variables_get" id="ZB8@CQ6[CMxz}lZ6anN$">
+                                <field name="VAR" id="-4vm4[`BLJr#``xcn6Vt" variabletype="">w_test</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="notify" id="SEEw*Jq8Y1y4~|DbEb5M">
+                            <field name="NOTIFICATION_TYPE">info</field>
+                            <field name="NOTIFICATION_SOUND">silent</field>
+                            <value name="MESSAGE">
+                              <shadow type="text" id="-^giFXgk]ZI~-aL`zsJ]">
+                                <field name="TEXT">end of test..end as winning bet // algorithm now shutdown the test mode</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="zMzLVL^t0.De|IFGty5,">
+                                <field name="VAR" id="#;9$qUC]NegTtn{E:JG%" variabletype="">Virtual Test mode</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="bTBLycjFw~B_jtr%p[xy">
+                                    <field name="BOOL">FALSE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="OSUsqiPV=dmqn)Blag^A">
+                                    <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id="*5X+f]48{rtf6Bjy}IZt">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="p4U!{%3hc~mm+8CMLfZI">
+                                        <field name="VAR" id="Q,:PKR%OD?bkQ{E4f(Q^" variabletype="">check_c</field>
+                                        <value name="VALUE">
+                                          <block type="math_number" id="kiN,D,cdYfdO(Dzt^*19">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="yVvc.bbKm/kldQ~]ebB%">
+                                            <field name="VAR" id="vUG^*qc;LbE~r6P*d)$y" variabletype="">try_count</field>
+                                            <value name="VALUE">
+                                              <block type="math_number" id="Xr/BYWfc[%u}BQWAgb+M">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <statement name="ELSE">
+                          <block type="notify" id="G]w!)?`bi{Ah_gYOksdT">
+                            <field name="NOTIFICATION_TYPE">error</field>
+                            <field name="NOTIFICATION_SOUND">silent</field>
+                            <value name="MESSAGE">
+                              <shadow type="text" id="D(w/cN_;Nqv4n9QlBU[s">
+                                <field name="TEXT"> algorithm found loss bet in the end .."Virtual Test Mode" will repeat ..stay cool.. </field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="variables_set" id=":K.V)F25,om/-}$1]==2">
+                                <field name="VAR" id="cE--@0kI(L4[D)1tf?d%" variabletype="">c_test-mode</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="VsO^dX0nO]3w`BG{.}/@">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="R[BL6|M+_GfU8ooic*m9">
+                                    <field name="VAR" id="Q,:PKR%OD?bkQ{E4f(Q^" variabletype="">check_c</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id=",rkr1xi(j95FRL{2Dt?a">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="math_change" id="i`cE/65^|bD[74g-z!_S">
+                                        <field name="VAR" id="vUG^*qc;LbE~r6P*d)$y" variabletype="">try_count</field>
+                                        <value name="DELTA">
+                                          <shadow type="math_number" id="@Sh,P:^rGwiiIgV)4M*s">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="controls_if" id="Op$Chxt(_FOB|1d~V;*G">
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="XfiHnQC`0I+qBWYM`g(9">
+                                                <field name="OP">GT</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="U?,@$@x7Le~xzNoeiUb4">
+                                                    <field name="VAR" id="vUG^*qc;LbE~r6P*d)$y" variabletype="">try_count</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="jc0g9OQy*JCZ8pU:tKE;">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="math_change" id="Y$KOl#z$^mpM-Ry$_PJ=">
+                                                <field name="VAR" id="}@!ddRa#WJ8/.jQ%-:xe" variabletype="">check test after</field>
+                                                <value name="DELTA">
+                                                  <shadow type="math_number" id="V}[$z9HWXPf?,F1AkfbX">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="math_single" id="*$PH%LAlG=YuQ@;1HR|K">
+                                                    <field name="OP">NEG</field>
+                                                    <value name="NUM">
+                                                      <shadow type="math_number" id="ZCNvgtuw}pR`2p)Cvl(,">
+                                                        <field name="NUM">9</field>
+                                                      </shadow>
+                                                      <block type="math_number" id="Oo@!5C|+F[Fz.ynpcP-6">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="math_change" id="T(@W+|$gJHiH2=H%y:Zh">
+                                                    <field name="VAR" id="-4vm4[`BLJr#``xcn6Vt" variabletype="">w_test</field>
+                                                    <value name="DELTA">
+                                                      <shadow type="math_number" id="V}[$z9HWXPf?,F1AkfbX">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_single" id="zB4|=m0dGWz*#0OV{$e!">
+                                                        <field name="OP">NEG</field>
+                                                        <value name="NUM">
+                                                          <shadow type="math_number" id="ZCNvgtuw}pR`2p)Cvl(,">
+                                                            <field name="NUM">9</field>
+                                                          </shadow>
+                                                          <block type="math_number" id="}-$G!a3Rj~?55D:o@AfP">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="controls_if" id="*:MmMn9-h)(a2I=Ehm!9">
+                                                        <value name="IF0">
+                                                          <block type="logic_compare" id="=}hP$*v5Xh/qgB3Ic4.3">
+                                                            <field name="OP">LT</field>
+                                                            <value name="A">
+                                                              <block type="variables_get" id="I#,8s-S?yI%xh[KEK|ER">
+                                                                <field name="VAR" id="}@!ddRa#WJ8/.jQ%-:xe" variabletype="">check test after</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="L4}td0,p/x4);o1u!6*!">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="variables_set" id="[c_nNJ62VjgtrIms..D+">
+                                                            <field name="VAR" id="}@!ddRa#WJ8/.jQ%-:xe" variabletype="">check test after</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_number" id="we!OmjLw*89~{;h/JwqI">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="variables_set" id="D1lKbeR]h[F8ApSqKas]">
+                                                                <field name="VAR" id="-4vm4[`BLJr#``xcn6Vt" variabletype="">w_test</field>
+                                                                <value name="VALUE">
+                                                                  <block type="math_number" id="(0MZoxx8*u$x@Ns_qUWF">
+                                                                    <field name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="variables_set" id="Tg4f/iKE7MSo.:+;!TJm">
+                        <field name="VAR" id="!~}h=~VQQp(v,NG,O0EK" variabletype="">wait_machine</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id="A-gf;duGbYu?XLZlm`om">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

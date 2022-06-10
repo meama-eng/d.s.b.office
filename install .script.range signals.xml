@@ -1,0 +1,1215 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="tick_analysis" id="x)d)}K(Q[EGe`dc700w`" collapsed="true">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="controls_if" id="Q46ts*X+l.QoJ5VKD4!o" collapsed="true">
+        <value name="IF0">
+          <block type="logic_operation" id="C?a=o=T,C!bsF*`(#qr!">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="variables_get" id="N#{WP`r*28*IR4g:cu)x">
+                <field name="VAR" id="VKaj(03d.,%H1.$p~3lk" variabletype="">Al-Range</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="variables_get" id="}SW;]xb2ikCl69![.CW%">
+                <field name="VAR" id="_;Hhq[lO-(ovwGdy_T0I" variabletype="">Allow.run</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="Ku%vaz:?.1^Ox/~;2Ma;">
+            <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+            <value name="VALUE">
+              <block type="logic_operation" id="cFU/MR9Zm?/s[%IT5FSl">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_negate" id="uZqz3`vx/C|H}D=pVJzR">
+                    <value name="BOOL">
+                      <block type="variables_get" id="X~hMt|4#aiHKInR}5?j=">
+                        <field name="VAR" id="m%b(ukD{$Wl^D$%wkSSL" variabletype="">fake.bb d.down</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_negate" id="JhZ,QB^Cnxw^/DGo^:XG">
+                    <value name="BOOL">
+                      <block type="variables_get" id="fw$Sf%7yQ.Dj(-2`+;K5">
+                        <field name="VAR" id="]T7z*2|i(oiJ(($mSuB*" variabletype="">fake.bb d.up</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="Irq{aZaiHw1%G@t_(SSI">
+                <field name="VAR" id="e?i1JK]Wj!|3Q:|BI9Qk" variabletype="">out.band.condition</field>
+                <value name="VALUE">
+                  <block type="logic_operation" id="`}n2fRoc3M}SURau8_9_" inline="false">
+                    <field name="OP">AND</field>
+                    <value name="A">
+                      <block type="logic_compare" id="@~vu6AYHGY0dXz0YvFfV">
+                        <field name="OP">GTE</field>
+                        <value name="A">
+                          <block type="variables_get" id="T@=o.T5^~w!8yFg,}%,N">
+                            <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id="}p0rmXuR3hp6`D|36k+%">
+                            <field name="VAR" id="#-I%f/ZYDSFed$qVEPTS" variabletype="">v.bb10,1.5c upper</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="logic_compare" id="1lf8.e)d03c.bo:W^Qyo">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block type="variables_get" id="X/lF-hPdPDov*IlP;8No">
+                            <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id=";{C?6)6M,P7)`m|AuwU!">
+                            <field name="VAR" id="3joVc[kxc;?5SSwKLE?5" variabletype="">v.bb10,1.5c lower</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="8Y8P:]CPK=.f|5~7Xs[C">
+                    <field name="VAR" id="aZ!AarFs~qb9cOOpx%22" variabletype="">in.band.condition</field>
+                    <value name="VALUE">
+                      <block type="logic_operation" id="~W]xS{PEE]Q(+sR8eiM`" inline="false">
+                        <field name="OP">AND</field>
+                        <value name="A">
+                          <block type="logic_compare" id="MAArWnJJ{#zRuAv)4/;C">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="variables_get" id="n|dED#gXwt/BJNHTvnu/">
+                                <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="variables_get" id="G*~C3b+SK[7Ia@Qw5c.n">
+                                <field name="VAR" id="#-I%f/ZYDSFed$qVEPTS" variabletype="">v.bb10,1.5c upper</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_compare" id="f!n8Oh[P8p2SsBrkNL!g">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="variables_get" id="Uv_yzy@%3kJTjSR#2-j?">
+                                <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="variables_get" id="UXY*N32/r.8v8*w6P8Q]">
+                                <field name="VAR" id="3joVc[kxc;?5SSwKLE?5" variabletype="">v.bb10,1.5c lower</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="PuRu+8G6CMD^o4(Q^^%|">
+                        <field name="VAR" id="6HT*S.*RrAK#+=Z0^5Rx" variabletype="">rsi5-cer</field>
+                        <value name="VALUE">
+                          <block type="rsia" id="){KR_:Yhv0[3!e+FYdp6">
+                            <value name="INPUT">
+                              <block type="ohlc_values" id="`PK6evdE,l?nt3bUNaGe">
+                                <field name="OHLCFIELD_LIST">close</field>
+                                <field name="CANDLEINTERVAL_LIST">default</field>
+                              </block>
+                            </value>
+                            <value name="PERIOD">
+                              <shadow type="math_number" id=".v2,CL2V,?l=l+{+R$,/">
+                                <field name="NUM">5</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="CH#1gIxetV08pVc!Cwwm">
+                            <field name="VAR" id="ucE/#n$;Q:zn(WLj1saL" variabletype="">rsi14-cer</field>
+                            <value name="VALUE">
+                              <block type="rsia" id="kyqf?,)UdX]qIPut:a*F">
+                                <value name="INPUT">
+                                  <block type="ohlc_values" id="~z]GzM?NETaQNaXzjEfL">
+                                    <field name="OHLCFIELD_LIST">close</field>
+                                    <field name="CANDLEINTERVAL_LIST">default</field>
+                                  </block>
+                                </value>
+                                <value name="PERIOD">
+                                  <shadow type="math_number" id="sK;2]`WcCfronWyrEj}X">
+                                    <field name="NUM">14</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_if" id="8q2`+]daI$Hzc@:d]qvn">
+                                <mutation elseif="1" else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_operation" id=";`X=p$!*uVQi,WJuV]sn">
+                                    <field name="OP">AND</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="eqi0FQI@4LrOhfP,`+*_">
+                                        <field name="VAR" id="UAs{F].LA^JFLFoP@PUa" variabletype="">trade.range</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="variables_get" id="rCs4.bwPXq{)+xIx%Hnj">
+                                        <field name="VAR" id="%I@R63nBp;y/`y:wd]?F" variabletype="">low.range.up</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="variables_set" id="fg55TLJ=uoh#5eLGtlK%">
+                                    <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="Z_CB/jHVDZRX`)Jb(gy7">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <value name="IF1">
+                                  <block type="logic_operation" id="#Q8}yba).hpa%n0XENNt">
+                                    <field name="OP">AND</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="#]Ca}HIBT87_8R|Jj7#(">
+                                        <field name="VAR" id="UAs{F].LA^JFLFoP@PUa" variabletype="">trade.range</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="variables_get" id="Jx24-2gpuQRd4S0wwI6*">
+                                        <field name="VAR" id="x|o~oNeLqs1jKER~D$ZT" variabletype="">low.range.down</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO1">
+                                  <block type="variables_set" id="+9Ym}qRa.lRIbSG1g~Ng">
+                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="F|l{;J~9NJ/V,{BP]Lz=">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="controls_if" id="k_n44gadiVQmHt/2x-P0">
+                                    <value name="IF0">
+                                      <block type="logic_negate" id="tPMCGKD_KKRr#=fQKkYq">
+                                        <value name="BOOL">
+                                          <block type="variables_get" id="dB=f|Pq1!,8lc{^mbIj=">
+                                            <field name="VAR" id="UAs{F].LA^JFLFoP@PUa" variabletype="">trade.range</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="V;umTN9Kebw:GJksgOZ5">
+                                        <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="{wNOO%RiwUge@wN8J)vK">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="cHuL7)psuZ@2M@2aJWfv">
+                                            <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                            <value name="VALUE">
+                                              <block type="logic_boolean" id="MefB%dxhJ~89it6MylcQ">
+                                                <field name="BOOL">FALSE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="controls_if" id="vU+)|U(vgNm9(O!F7}sk">
+                                    <value name="IF0">
+                                      <block type="logic_operation" id="MKzR]TfNGjNWBA!L+TrH">
+                                        <field name="OP">AND</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="rUPDZkhH+R=/CaFSzetG">
+                                            <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="variables_get" id="CWXSO/0c_(y?@X_ox.Yh">
+                                            <field name="VAR" id="e?i1JK]Wj!|3Q:|BI9Qk" variabletype="">out.band.condition</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="controls_if" id="ViG~/VD5cs0a_:L)*]}+">
+                                        <value name="IF0">
+                                          <block type="logic_operation" id="V[F41H0F9m.|.SB0{g|M" inline="false">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="CF|;9j1V)t6-abpd=dE|">
+                                                <field name="OP">GT</field>
+                                                <value name="A">
+                                                  <block type="tick" id="kfk1F7!GI3ynQZYb4MK}"></block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="variables_get" id="PE#Hk{2@k^lsHL2XkI//">
+                                                    <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_compare" id="MY;aa:oUFSljvkZ1Z(ez" inline="false">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="jVDehqF=^dzo!2i@l@1E">
+                                                    <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="j+Xt7+7Ja0}k~Ei8aco.">
+                                                    <field name="NUM">70</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="variables_set" id="06[~McILnMkmY6`ufvu(">
+                                            <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                            <value name="VALUE">
+                                              <block type="logic_boolean" id="/R8B~:J,WUdmkdyUQ.Os">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="variables_set" id="A1WzJQ9hq9o?xlt*9:V3">
+                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                <value name="VALUE">
+                                                  <block type="logic_boolean" id="(RCXY=zf#r.ua3sv36;M">
+                                                    <field name="BOOL">FALSE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="controls_if" id="yztH5mJgz%kX2w5,%0]p">
+                                            <value name="IF0">
+                                              <block type="logic_operation" id="q5j[)E$!Wdt@;%I.:_5+" inline="false">
+                                                <field name="OP">AND</field>
+                                                <value name="A">
+                                                  <block type="logic_compare" id="M$[~ZTj?Ug?Nxxv.aU!D">
+                                                    <field name="OP">LT</field>
+                                                    <value name="A">
+                                                      <block type="tick" id="6]{MZFe9GzuocdVn@=ps"></block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="variables_get" id="R8GP/E7PU%iqyHBRc}|q">
+                                                        <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_compare" id="Fb:)Xq8X^F5(sF@l*r~B" inline="false">
+                                                    <field name="OP">GT</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="P[=8Dqzb;/=sGXcq2w/W">
+                                                        <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="(/lp?[A/pks2m.?11S9Y">
+                                                        <field name="NUM">30</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="variables_set" id="XqK-ENgHVQhDn,QVBD@z">
+                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                <value name="VALUE">
+                                                  <block type="logic_boolean" id="F=G2tzsLP1HXt.I!EEPF">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="zr2QC[_twIap.TQ$S;_c">
+                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="Zb*@aoh$G0LLxfj30lkH">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="controls_if" id=",MH!Fkwi//O|isBW!)F7">
+                                        <value name="IF0">
+                                          <block type="logic_operation" id="uY~VA?m_q)9^S#{a_,Eu">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="A?A4Q}3QY-ZCtiVj.n}+">
+                                                <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="variables_get" id="eA5a9Et_ubK3BB(KxNQm">
+                                                <field name="VAR" id="aZ!AarFs~qb9cOOpx%22" variabletype="">in.band.condition</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="controls_if" id="5?5VV/{?pPW$lLQRZ;Q.">
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="!!H8ycmaRwf8MTU!!9D;">
+                                                <field name="OP">GT</field>
+                                                <value name="A">
+                                                  <block type="tick" id="!f!jRaC[{VX4+*WsQzXa"></block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="variables_get" id="dXTd|e0zuTC^H]zmXR,F">
+                                                    <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="variables_set" id="Arg6~dCp,*K%qND8,_fQ">
+                                                <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                <value name="VALUE">
+                                                  <block type="logic_boolean" id="Th5(V6BXTMkNipxg~uv{">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="`|?w-qP!=X:ADWD1c!jW">
+                                                    <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="BX+_S$Jx9dqj#X*Wq!2|">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="controls_if" id="{mnm%/A^H,@;lQD#=UDS">
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="}jWhRS-B$q{|x+Rh$L;Z">
+                                                    <field name="OP">LT</field>
+                                                    <value name="A">
+                                                      <block type="tick" id="[;1@b%pW$N:dYbm0M%Xf"></block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="variables_get" id="),P:]!t.5eH[xfADIMqp">
+                                                        <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="variables_set" id="W{uCzIS~4PKK^7vLd~Vb">
+                                                    <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="8;y[]CP}Kj~`sU6P+@1=">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="pzB,{-S!mB!vC:z2yw]1">
+                                                        <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="Bm$eb:-NvfO;e0VUN{Ob">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="controls_if" id="usMQ2@-+Vu(68t!vGUE^">
+                                            <value name="IF0">
+                                              <block type="logic_operation" id="5,ML[8Kwo(B)q0JM1$MM">
+                                                <field name="OP">AND</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="uUhbos+h4O]-+k:CEb:s">
+                                                    <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_operation" id="-ak@9y/8[o+qIP%NFEJH" inline="false">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="logic_negate" id="7{`!JWkI*,HZzA?Nh6DK">
+                                                        <value name="BOOL">
+                                                          <block type="variables_get" id="[Ym=GOrdmix6]+5/1n])">
+                                                            <field name="VAR" id="aZ!AarFs~qb9cOOpx%22" variabletype="">in.band.condition</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_negate" id="h//T}N:LJ}:nM#DP-v|3">
+                                                        <value name="BOOL">
+                                                          <block type="variables_get" id=";D7UOn{;99GN5[8X7[`L">
+                                                            <field name="VAR" id="e?i1JK]Wj!|3Q:|BI9Qk" variabletype="">out.band.condition</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="controls_if" id="uGGW.3Y_[w13(@6vtK8)">
+                                                <value name="IF0">
+                                                  <block type="logic_operation" id="pV1!5EOo0Isci)?~i_b-" inline="false">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="logic_compare" id="vOrbBN$WZ._#Cg4RwG]U">
+                                                        <field name="OP">GT</field>
+                                                        <value name="A">
+                                                          <block type="tick" id="8/juKgh2{eMOwi|`]!TW"></block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="variables_get" id="9(H8^_5u]$[-1o^1|_*Y">
+                                                            <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_compare" id=")!7I-uxmC4z06?Vk+@@m" inline="false">
+                                                        <field name="OP">GT</field>
+                                                        <value name="A">
+                                                          <block type="variables_get" id="rfng-3DlNoR!AR=Zn#B*">
+                                                            <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="[D=QzyKm-H5D(P-QDO=?">
+                                                            <field name="NUM">70</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="variables_set" id="DIn*g]xkSF=My(/pvOmU">
+                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="RtZ;03YH25;;}}4~kn3p">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="d)[k!1hET;-A^o~ED`d5">
+                                                        <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="{sjDjk+6I{(GHqNg*)E#">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="controls_if" id="5X$O@27*hv`[u-5[E-tB">
+                                                    <value name="IF0">
+                                                      <block type="logic_operation" id="c^4M1!1C:!+N-TjOu(_w" inline="false">
+                                                        <field name="OP">AND</field>
+                                                        <value name="A">
+                                                          <block type="logic_compare" id="D1HHtgM,V9p=JU-^oELv">
+                                                            <field name="OP">LT</field>
+                                                            <value name="A">
+                                                              <block type="tick" id="@F7ABg|l?!p];a*.JNHP"></block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="variables_get" id="F,r=BMuXL]g+mB?5pmM*">
+                                                                <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="logic_compare" id="gp;DP:t7v9oSj1_0!(!*" inline="false">
+                                                            <field name="OP">LT</field>
+                                                            <value name="A">
+                                                              <block type="variables_get" id="Try$wo8HT^B^H03{~oS_">
+                                                                <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="cjyyn%Uwt.jq}ObRdWCT">
+                                                                <field name="NUM">30</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="variables_set" id="sU67ZHJR_hgAJ%X1lz2p">
+                                                        <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="pjH67s4DjMIIlKR{Hw2)">
+                                                            <field name="BOOL">TRUE</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="variables_set" id="~ZoxC[352ZOk(FN4HxP{">
+                                                            <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                            <value name="VALUE">
+                                                              <block type="logic_boolean" id="u=Z-p6?-9nO_!y%pW}49">
+                                                                <field name="BOOL">FALSE</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="controls_if" id="d^qE1YzR|ej(1m@xbZ(R">
+                                                <mutation elseif="1"></mutation>
+                                                <value name="IF0">
+                                                  <block type="logic_operation" id="m=m3H4W~`o{mMyzAxR@1">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="O|syRf}@a!fI}+8xzkL+">
+                                                        <field name="VAR" id="UAs{F].LA^JFLFoP@PUax" variabletype="">ht.trade.range</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="variables_get" id="Y{Y7(g-_]:7_n3e[JvOO">
+                                                        <field name="VAR" id="UAs{F].LA^JFLFoP@PUa" variabletype="">trade.range</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="variables_set" id="N(;]OY!lW2a(_u.R[.:b">
+                                                    <field name="VAR" id="=hl9V5?x|%A^Lf1QOua[" variabletype="">worse.market</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="MT#sdsK~m}T79_#9-|OY">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="notify" id="Mlpjme^NZEy,a.i=jeqn">
+                                                        <field name="NOTIFICATION_TYPE">info</field>
+                                                        <field name="NOTIFICATION_SOUND">error</field>
+                                                        <value name="MESSAGE">
+                                                          <shadow type="text" id="bJ#z9Nw4]6jrF`53#0K=">
+                                                            <field name="TEXT"> WARNING ::Bad Market period..Ai-algorithm suggest trading small range horizontal</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                                <value name="IF1">
+                                                  <block type="logic_negate" id="ViWaSyJ-^~Fr#,3seRTb">
+                                                    <value name="BOOL">
+                                                      <block type="logic_operation" id="[nK5+3vSA:KSl@NY:,+T">
+                                                        <field name="OP">AND</field>
+                                                        <value name="A">
+                                                          <block type="variables_get" id="jo*{Vvo{,=jT73i37Aci">
+                                                            <field name="VAR" id="UAs{F].LA^JFLFoP@PUax" variabletype="">ht.trade.range</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="variables_get" id="4F~S%8ifJElZ`+%P+p7N">
+                                                            <field name="VAR" id="UAs{F].LA^JFLFoP@PUa" variabletype="">trade.range</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO1">
+                                                  <block type="variables_set" id="MYiopDvGdH}1f#$(eOoS">
+                                                    <field name="VAR" id="=hl9V5?x|%A^Lf1QOua[" variabletype="">worse.market</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="H;ra~O^6]!S{:%!BmWCi">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="controls_if" id="gTX3Vx1QN9~G+;.xt]iY">
+                                                    <value name="IF0">
+                                                      <block type="logic_operation" id="To~{7(xcI^2ik:}l}JVv">
+                                                        <field name="OP">AND</field>
+                                                        <value name="A">
+                                                          <block type="logic_operation" id="^Tr.BVrfOdV)N4PH(y+3" inline="false">
+                                                            <field name="OP">AND</field>
+                                                            <value name="A">
+                                                              <block type="logic_compare" id="BQBg3.{#s_CuOW7(J{L6">
+                                                                <field name="OP">GT</field>
+                                                                <value name="A">
+                                                                  <block type="lists_getIndex" id="_vde?[HWW?MoRyRC$_6B" inline="false">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="9i~4Y%L9V:VE*35J2`7A">
+                                                                        <field name="VAR" id="6HT*S.*RrAK#+=Z0^5Rx" variabletype="">rsi5-cer</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="UoOfy1KHs%z_,T$e}MFu">
+                                                                        <field name="NUM">3</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="lists_getIndex" id="=zQVrV~BEENp0vCmg*/q" inline="false">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="cmOggRgpO{odp0_+E]Q$">
+                                                                        <field name="VAR" id="ucE/#n$;Q:zn(WLj1saL" variabletype="">rsi14-cer</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="c^(ZV0)BAzh)[`F1gAf;">
+                                                                        <field name="NUM">3</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="logic_compare" id="gyvm@`@R$3EZ|N5:3Vk9">
+                                                                <field name="OP">LT</field>
+                                                                <value name="A">
+                                                                  <block type="lists_getIndex" id="-P8#Dv)aAbkX_EOO`(G{" inline="false">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="u-bG~n^yO)]/oq$qbgW8">
+                                                                        <field name="VAR" id="6HT*S.*RrAK#+=Z0^5Rx" variabletype="">rsi5-cer</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="D-B+5nlV_ocZTOVrl4zk">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="lists_getIndex" id="1gN.b`C`EN|#]smA`qDk" inline="false">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="3q+V(_zy?(e@;kcoFLIB">
+                                                                        <field name="VAR" id="ucE/#n$;Q:zn(WLj1saL" variabletype="">rsi14-cer</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="~8Byvl~A{tCt+;_~g0)y">
+                                                                        <field name="NUM">2</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="variables_get" id="%ElSrFT~i=4H`?N#i+Py">
+                                                            <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="variables_set" id="kDbc2j.tM3P;DZ`7D(qP">
+                                                        <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                        <value name="VALUE">
+                                                          <block type="logic_boolean" id="sEmHC]w^5pL~c?ZS^Pha">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="controls_if" id="MV@b1*cOYumJWmXT5_7O">
+                                                        <value name="IF0">
+                                                          <block type="logic_operation" id="dV+tCF/?V1rg(.D5@#=V">
+                                                            <field name="OP">AND</field>
+                                                            <value name="A">
+                                                              <block type="logic_operation" id="*qQ_nA*QUMDvL0PKO=QK" inline="false">
+                                                                <field name="OP">AND</field>
+                                                                <value name="A">
+                                                                  <block type="logic_compare" id="bN`v;#`13Qg}!pZ4txlO">
+                                                                    <field name="OP">LT</field>
+                                                                    <value name="A">
+                                                                      <block type="lists_getIndex" id="%`R1d3;0[Mf*19sn4PU|" inline="false">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id=".(*V+ff.ze,f]kgvwMu4">
+                                                                            <field name="VAR" id="6HT*S.*RrAK#+=Z0^5Rx" variabletype="">rsi5-cer</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id="[|j!69XVuiS^Xp83vifo">
+                                                                            <field name="NUM">3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="lists_getIndex" id="9*R}0p/O$Dpb/}kxWu~*" inline="false">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="|9Oc%a_URS3A=9*Zjp8S">
+                                                                            <field name="VAR" id="ucE/#n$;Q:zn(WLj1saL" variabletype="">rsi14-cer</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id="Qh}*38NsDUBS+e9=jFu9">
+                                                                            <field name="NUM">3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="logic_compare" id="-3hg;D5{qLa0?vah6[EH">
+                                                                    <field name="OP">GT</field>
+                                                                    <value name="A">
+                                                                      <block type="lists_getIndex" id=")nEONl.]U5zNS{U~pEE8" inline="false">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="FBWo@}8Oe`wNqlUrJ=d:">
+                                                                            <field name="VAR" id="6HT*S.*RrAK#+=Z0^5Rx" variabletype="">rsi5-cer</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id="Ukw@[zxk]YE}rKK:v))i">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="lists_getIndex" id=",QkK@B@v.mj%V,T_uWW4" inline="false">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="Z{}7b6f/-9EZii/C#3a[">
+                                                                            <field name="VAR" id="ucE/#n$;Q:zn(WLj1saL" variabletype="">rsi14-cer</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id="i^%mNj2$BS@`bc[-WASm">
+                                                                            <field name="NUM">2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="variables_get" id="/xp9+Ab5damZA,d#bkGh">
+                                                                <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block type="variables_set" id="Rf%I,_=Vy|^:*^?TAC@P">
+                                                            <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                            <value name="VALUE">
+                                                              <block type="logic_boolean" id="9?!}DIo^Z~,U^O^I])|t">
+                                                                <field name="BOOL">FALSE</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="controls_if" id="!z`q7QQhpN1w(S)Pnau;">
+                                                            <value name="IF0">
+                                                              <block type="logic_operation" id="NbtD-1+Qk+Tzf@BL:XC3">
+                                                                <field name="OP">AND</field>
+                                                                <value name="A">
+                                                                  <block type="logic_operation" id="-ZFH[NJMHjR{0p.%A2G$" inline="false">
+                                                                    <field name="OP">AND</field>
+                                                                    <value name="A">
+                                                                      <block type="logic_compare" id="}f.!Ejx[en]$51{QDwii">
+                                                                        <field name="OP">EQ</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="-B3Sacs@|TV`)^^IER|d">
+                                                                            <field name="VAR" id="t,w6I#BLZ7WpB}C]v|~m" variabletype="">candle.type</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="text" id="^mzw,5WpF~SYv1=~6*C^">
+                                                                            <field name="TEXT">Green candle.de</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="logic_compare" id="r{{UQWEoecxGAHnP*~$|">
+                                                                        <field name="OP">LT</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="b%ST2=bdJ=PMGsJLYnVt">
+                                                                            <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="variables_get" id=";JzS1u$U5KD0^JCdT.8k">
+                                                                            <field name="VAR" id="~h6yGu]qLc/1H7{15XEa" variabletype="">Rsi5.c p4</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="variables_get" id="(meb),12#$Y}[mSD|_f;">
+                                                                    <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="variables_set" id="hnRZnsO~1r9nK7w5r9Wg">
+                                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                <value name="VALUE">
+                                                                  <block type="logic_boolean" id="Rm?lN@[QTH9?TD#M`6+f">
+                                                                    <field name="BOOL">FALSE</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="controls_if" id="@kgPXz#jRK,r^Y.Q8,iF">
+                                                                <value name="IF0">
+                                                                  <block type="logic_operation" id="]rB-N(W1Rs|Ns0SNlXLK">
+                                                                    <field name="OP">AND</field>
+                                                                    <value name="A">
+                                                                      <block type="logic_operation" id="+c#$Xy`l4UG^uDCwUE.n" inline="false">
+                                                                        <field name="OP">AND</field>
+                                                                        <value name="A">
+                                                                          <block type="logic_compare" id="*PwrmwTOPrWpr2HtAd]r">
+                                                                            <field name="OP">EQ</field>
+                                                                            <value name="A">
+                                                                              <block type="variables_get" id="lhQOD=3z1~zUdK2+i^?w">
+                                                                                <field name="VAR" id="t,w6I#BLZ7WpB}C]v|~m" variabletype="">candle.type</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="text" id="g5zWl:GolZ_CiFpbqpC;">
+                                                                                <field name="TEXT">Red candle.de</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="logic_compare" id="_lqQ9xYQt}=:`U~GUEMR">
+                                                                            <field name="OP">GT</field>
+                                                                            <value name="A">
+                                                                              <block type="variables_get" id="yfKyF8J]F#HC{IcYY`d,">
+                                                                                <field name="VAR" id="Ccx9Ev0vPWQ=FwI%SG_3" variabletype="">rsi 5.c.p2</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="variables_get" id="E5~yC%rVAnld1R@YpKQZ">
+                                                                                <field name="VAR" id="~h6yGu]qLc/1H7{15XEa" variabletype="">Rsi5.c p4</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="variables_get" id="PDpr,}sG]@,*EJJCR=AG">
+                                                                        <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="variables_set" id="UMA]*EMA_T,{]mCxTdXs">
+                                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="logic_boolean" id="oD`bN0MRolEu;OZN(W[T">
+                                                                        <field name="BOOL">FALSE</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                                <next>
+                                                                  <block type="controls_if" id="d}zY6$8~NHK9U7dbfoJe">
+                                                                    <value name="IF0">
+                                                                      <block type="logic_operation" id=")K~DkHXk5I24trOxU*b;" inline="false">
+                                                                        <field name="OP">AND</field>
+                                                                        <value name="A">
+                                                                          <block type="logic_operation" id="P6#FG^*PL6x~Zg`p)MND">
+                                                                            <field name="OP">AND</field>
+                                                                            <value name="A">
+                                                                              <block type="variables_get" id="QwDIU7OS:am/5NH0_XP3">
+                                                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="variables_get" id="AIU#H;m,*c^r-Yzsl}+f">
+                                                                                <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="logic_compare" id="`kE/MLgOZ(KZwIc5LS$H">
+                                                                            <field name="OP">LT</field>
+                                                                            <value name="A">
+                                                                              <block type="tick" id="1L4O!Jz5:yw%jJg/UI9b"></block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="variables_get" id="h{Th?-|(GNXK-H(b(-nv">
+                                                                                <field name="VAR" id="Q:G]xY(VO|+5L=q}E2A8x" variabletype="">vht.bb5,1.5c.L</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <statement name="DO0">
+                                                                      <block type="variables_set" id="8h*O4zVa9Bt{Fp=!pxjw">
+                                                                        <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="logic_boolean" id="PHl6C@Yp~^]0+tDMX#Xk">
+                                                                            <field name="BOOL">FALSE</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <next>
+                                                                      <block type="controls_if" id="C9sd92#QbQd:K6-.p,ds">
+                                                                        <value name="IF0">
+                                                                          <block type="logic_operation" id="N+dCPE^W|Ug:oo|4(kk!" inline="false">
+                                                                            <field name="OP">AND</field>
+                                                                            <value name="A">
+                                                                              <block type="logic_operation" id="0=GI*-U9z#aA=dIfB24B">
+                                                                                <field name="OP">AND</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id="e3,Eg|%y]C)?!ZvV}2]@">
+                                                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="variables_get" id="v}k^38eAwYb.V9b9rvJX">
+                                                                                    <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="logic_compare" id="4;M~fRbr`Y1u{#YI!S)?">
+                                                                                <field name="OP">GT</field>
+                                                                                <value name="A">
+                                                                                  <block type="tick" id="DPt[Nb15r_4!@Q]i}h[-"></block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="variables_get" id="A2Mrl[vct1,T;K[NLB8c">
+                                                                                    <field name="VAR" id="bauFItGhnPP)~aPi^;mpx" variabletype="">vht.bb5,1.5c.u</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <statement name="DO0">
+                                                                          <block type="variables_set" id="6z}AejBx6Ci{X~}afQ+]">
+                                                                            <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="logic_boolean" id="wtRyIi%:4fC=,A#dI{%n">
+                                                                                <field name="BOOL">FALSE</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </statement>
+                                                                        <next>
+                                                                          <block type="controls_if" id="}K=$ss_hk7Wq`wD|0P$C">
+                                                                            <mutation elseif="1"></mutation>
+                                                                            <value name="IF0">
+                                                                              <block type="logic_operation" id="l=oj,P;u2tXj:WL)/8PP">
+                                                                                <field name="OP">AND</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id="Fv+i!MB7fcdoqr#rC-6d">
+                                                                                    <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="logic_negate" id="#w//em^]Pj(}txRWN)uG">
+                                                                                    <value name="BOOL">
+                                                                                      <block type="variables_get" id="qpo]45/}N4uh3)I1N(s3">
+                                                                                        <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="variables_set" id="*Jg?|)R:6Ll.Fe4T1Y+J">
+                                                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="logic_boolean" id="96*r4wDGEjig-~op5OiL">
+                                                                                    <field name="BOOL">FALSE</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="variables_set" id="Cg)U3E2NK5#_MSpsn[!;">
+                                                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="logic_boolean" id="IOwQqFgr_#{uJ(J]~Eim">
+                                                                                        <field name="BOOL">FALSE</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <value name="IF1">
+                                                                              <block type="logic_operation" id="~@j!HWAPsErDg,fDeEP%">
+                                                                                <field name="OP">AND</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id=".)F(TvOx!+pTI/xQdbep">
+                                                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="logic_negate" id="~}4RbXw}DD#1rGD]8@=7">
+                                                                                    <value name="BOOL">
+                                                                                      <block type="variables_get" id="!gb56rU2fW@ytPr{r07m">
+                                                                                        <field name="VAR" id="#::|HyRHpPHFw2WNE-5B" variabletype="">un.confirm=chaos</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO1">
+                                                                              <block type="variables_set" id="mOPu%$n!B$p5v0we$kUI">
+                                                                                <field name="VAR" id="dxlZk^Cbh_?|XI=u0Vrs" variabletype="">signal.range.up</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="logic_boolean" id="Ewlo$l{%4n]%H``]]btd">
+                                                                                    <field name="BOOL">FALSE</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="variables_set" id="=Wi|,Xz4aPq]q_6L~7/9">
+                                                                                    <field name="VAR" id="]9cpWx/$F8vYfzSOMRdz" variabletype="">signal.range.down</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="logic_boolean" id="E_ds57ya!UPb!L`72}8H">
+                                                                                        <field name="BOOL">FALSE</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
